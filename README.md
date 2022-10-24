@@ -43,4 +43,4 @@ Focus on proper use of spacing, as I feel like this layout can be even sleeker. 
 ## Author
 
 - Frontend Mentor - [@dragonfireshield](https://www.frontendmentor.io/profile/dragonfireshield)
-- Twitter - [@dragonfireshield](https://www.twitter.com/dragonfireshield)
+- Twitter - [@shieldfordragon](https://www.twitter.com/shieldfordragon)
