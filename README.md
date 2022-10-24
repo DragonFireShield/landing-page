@@ -22,6 +22,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Links
 
 - Solution URL: [GitHub Spaces](https://dragonfireshield.github.io/landing-page/)
+- [FontAwesome](https://fontawesome.com/)
 
 ## My process
 
@@ -31,6 +32,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- FontAwesome
 
 ### What I learned
 
