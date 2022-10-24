@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* Primary colors */
+    --violet: hsl(257 40% 49%);
+    --soft-magenta: hsl(300 69% 71%);
+    --white: hsl(0 0% 100%);
+    --blackish: hsl(0 0% 20%);
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.body {
+    align-items: center;
+    background: var(--violet) url(bg-mobile.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.body > * {
+    width: 100%;
+    padding: 2em 4em;
+}
+
+.logo {
+    max-width: 18ch;
+}
+
+.main {
+    align-items: center;
+    gap: 4em;
+}
+
+.main > * {
+    max-width: 710px;
+}
+
+.mockup {
+    display: block;
+    width: 100%;
+}
+
+.text {
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.register-link {
+    margin-top: 1em;
+}
+
+.register-button {
+    padding: 1em 6em;
+    background: var(--white);
+    color: var(--violet);
+    font-size: 1em;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0 .3em 1em #333;
+    cursor: pointer;
+    transition: background 300ms ease-in-out, color 500ms ease-in-out;
+}
+
+.register-button:hover {
+    background: var(--soft-magenta);
+    color: var(--white);
+    transition: background 200ms ease-in-out, color 300ms ease-in-out;
+}
+
+.footer {
+    align-items: center;
+    gap: 2em
+}
+
+.socials {
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+}
+
+.brand-link {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+}
+
+.brand-link:hover {
+    background: radial-gradient(circle at top left, hsl(0 0% 100% / .5), hsl(300 69% 71% / .5));
+    border: 1px solid var(--soft-magenta);
+    box-shadow: inset 0 0 .5em var(--soft-magenta), inset .1em .1em hsl(0 0% 100% / .5), inset -.05em -.05em hsl(0 0% 0% / .2);
+    transform: scale(1.3);
+    transition: transform 300ms ease-in-out;
+}
+
+.brand-link:hover .fa-brands {
+    color: var(--soft-magenta);
+}
+
+.fa-brands {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.attribution { 
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--soft-magenta);
+}
+
+.attribution a:hover {
+    filter: brightness(150%);
+}
+
+
+@media only screen and (min-width: 1180px) {
+    .body {
+        background: var(--violet) url(bg-desktop.svg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3em;
+    }
+
+    .text {
+        margin-top: 3em;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer {
+        gap: 1em;
+    }
+    
+    .socials {
+        justify-content: flex-end;
+    }
+}
